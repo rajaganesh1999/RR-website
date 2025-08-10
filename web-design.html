@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design - RR Web Developer</title>
+    <link rel="stylesheet" href="web-design.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>RR</h2>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="featured Projects.html" class="nav-link">Featured Projects</a></li>
+                <!-- <li><a href="web-design.html" class="nav-link active">Web Design</a></li> -->
+                <!-- <li><a href="frontend-development.html" class="nav-link">Frontend Development</a></li>
+                <li><a href="backend-development.html" class="nav-link">Backend Development</a></li>
+                <li><a href="fullstack-solutions.html" class="nav-link">Full-Stack Solutions</a></li> -->
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="contact-btn" onclick="window.location.href='contact.html'">GET QUOTE</button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-palette"></i>
+                    <span>Creative Web Design</span>
+                </div>
+                <h1>Beautiful <span class="highlight">Design</span> That Converts</h1>
+                <p>Creating visually stunning, user-friendly websites that represent your brand and drive results</p>
+                <div class="hero-buttons">
+                    <button class="cta-btn primary" onclick="document.getElementById('tools').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>View Our Tools</span>
+                    </button>
+                    <button class="cta-btn secondary" onclick="window.location.href='Featured Projects.html'">
+                        <i class="fas fa-eye"></i>
+                        <span>See Our Work</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="design-showcase">
+                    <div class="design-frame main-frame">
+                        <div class="frame-header">
+                            <div class="frame-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                            <div class="frame-title">Modern Website</div>
+                        </div>
+                        <div class="frame-content">
+                            <div class="design-element header-section">
+                                <div class="nav-bar">
+                                    <div class="logo-placeholder"></div>
+                                    <div class="nav-items">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="design-element hero-section">
+                                <div class="hero-text">
+                                    <div class="text-line long"></div>
+                                    <div class="text-line medium"></div>
+                                    <div class="text-line short"></div>
+                                </div>
+                                <div class="hero-image"></div>
+                            </div>
+                            <div class="design-element content-section">
+                                <div class="content-grid">
+                                    <div class="content-card"></div>
+                                    <div class="content-card"></div>
+                                    <div class="content-card"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="design-frame mobile-frame">
+                        <div class="mobile-header">
+                            <div class="mobile-notch"></div>
+                        </div>
+                        <div class="mobile-content">
+                            <div class="mobile-nav">
+                                <div class="mobile-logo"></div>
+                                <div class="mobile-menu"></div>
+                            </div>
+                            <div class="mobile-hero">
+                                <div class="mobile-text">
+                                    <div class="mobile-line"></div>
+                                    <div class="mobile-line short"></div>
+                                </div>
+                                <div class="mobile-button"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-elements">
+                        <div class="floating-icon" data-tool="figma">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <div class="floating-icon" data-tool="adobe">
+                            <i class="fab fa-adobe"></i>
+                        </div>
+                        <div class="floating-icon" data-tool="sketch">
+                            <i class="fas fa-vector-square"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Web Design -->
+    <section class="what-is-design">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Understanding</span>
+                <h2>What is Web Design?</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-text">
+                    <p class="intro-text">Web design is the art and strategy of creating visually appealing, user-friendly websites that represent your brand and connect with your audience. It's not just about how a website looks — it's about how it works.</p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="fas fa-eye"></i>
+                            <div class="feature-content">
+                                <h4>Visual Appeal</h4>
+                                <p>Creating stunning designs that capture attention and reflect your brand identity</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <div class="feature-content">
+                                <h4>User Experience</h4>
+                                <p>Intuitive navigation and layout that guides visitors toward desired actions</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="feature-content">
+                                <h4>Mobile Responsive</h4>
+                                <p>Seamless experience across all devices and screen sizes</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <div class="feature-content">
+                                <h4>Brand Connection</h4>
+                                <p>Building trust and emotional connection with your target audience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-visual">
+                    <div class="design-process">
+                        <div class="process-step" data-step="1">
+                            <div class="step-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="step-info">
+                                <h4>Ideation</h4>
+                                <p>Concept & Strategy</p>
+                            </div>
+                        </div>
+                        <div class="process-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="process-step" data-step="2">
+                            <div class="step-icon">
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                            <div class="step-info">
+                                <h4>Wireframing</h4>
+                                <p>Structure & Layout</p>
+                            </div>
+                        </div>
+                        <div class="process-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="process-step" data-step="3">
+                            <div class="step-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="step-info">
+                                <h4>Visual Design</h4>
+                                <p>Colors & Typography</p>
+                            </div>
+                        </div>
+                        <div class="process-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="process-step" data-step="4">
+                            <div class="step-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="step-info">
+                                <h4>Development</h4>
+                                <p>Code & Implementation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies & Tools Section */
+    <section class="technologies" id="tools">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Creative Arsenal</span>
+                <h2>Technologies & Tools We Use</h2>
+                <p>We combine creativity with the latest design tools and frameworks to craft standout websites</p>
+            </div>
+            
+            <div class="tools-categories">
+                <!-- Design Tools -->
+                <div class="tool-category">
+                    <div class="category-header">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Design Tools</h3>
+                    </div>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <h4>Figma</h4>
+                            <p>Collaborative design platform</p>
+                            <div class="tool-progress">
+                                <div class="progress-bar" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fab fa-adobe"></i>
+                            </div>
+                            <h4>Adobe XD</h4>
+                            <p>Professional design suite</p>
+                            <div class="tool-progress">
+                                <div class="progress-bar" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <h4>Photoshop & Canva</h4>
+                            <p>Image editing & graphics</p>
+                            <div class="tool-progress">
+                                <div class="progress-bar" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Technologies -->
+                <div class="tool-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Frontend Technologies</h3>
+                    </div>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4>HTML5 & CSS3</h4>
+                            <p>Modern web standards</p>
+                            <div class="tool-progress">
+                                <div class="progress-bar" data-width="98"></div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <p>Interactive functionality</p>
+                            <div class="tool-progress">
+                                <div class="progress-bar" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fab fa-bootstrap"></i>
+                            </div>
+                            <h4>Bootstrap & Tailwind</h4>
+                            <p>Responsive frameworks</p>
+                            <div class="tool-progress">
+                                <div class="progress-bar" data-width="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX & CMS -->
+                <div class="tool-category">
+                    <div class="category-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>UI/UX & CMS Platforms</h3>
+                    </div>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fab fa-wordpress"></i>
+                            </div>
+                            <h4>WordPress & Elementor</h4>
+                            <p>Content management systems</p>
+                            <div class="tool-progress">
+                                <div class="progress-bar" data-width="94"></div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <h4>Material UI & Fluent UI</h4>
+                            <p>Design system frameworks</p>
+                            <div class="tool-progress">
+                                <div class="progress-bar" data-width="86"></div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <h4>Performance Optimization</h4>
+                            <p>Speed & SEO best practices</p>
+                            <div class="tool-progress">
+                                <div class="progress-bar" data-width="91"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Features Section -->
+    <section class="design-features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">What We Deliver</span>
+                <h2>Design Features & Capabilities</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Custom Branding</h3>
+                    <p>Unique visual identity that reflects your brand personality and values</p>
+                    <ul>
+                        <li>Logo integration</li>
+                        <li>Brand color schemes</li>
+                        <li>Typography selection</li>
+                        <li>Visual consistency</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Perfect display and functionality across all devices and screen sizes</p>
+                    <ul>
+                        <li>Mobile-first approach</li>
+                        <li>Tablet optimization</li>
+                        <li>Desktop enhancement</li>
+                        <li>Cross-browser compatibility</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Performance Optimization</h3>
+                    <p>Fast-loading websites that provide excellent user experience</p>
+                    <ul>
+                        <li>Image optimization</li>
+                        <li>Lazy loading</li>
+                        <li>Code minification</li>
+                        <li>SEO optimization</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>User Experience</h3>
+                    <p>Intuitive navigation and layout that converts visitors into customers</p>
+                    <ul>
+                        <li>User journey mapping</li>
+                        <li>Conversion optimization</li>
+                        <li>Accessibility standards</li>
+                        <li>Interactive elements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Business Impact</span>
+                <h2>How It Helps Your Business</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Increased Conversions</h3>
+                    <p>Strategic design elements guide visitors toward desired actions, boosting your conversion rates.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Brand Credibility</h3>
+                    <p>Professional design builds trust and establishes your business as an industry authority.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Better SEO Rankings</h3>
+                    <p>Optimized design structure and performance improve your search engine visibility.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Customer Loyalty</h3>
+                    <p>Exceptional user experience creates lasting impressions and repeat visitors.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Competitive Edge</h3>
+                    <p>Stand out from competitors with unique, memorable design that captures attention.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Higher ROI</h3>
+                    <p>Effective design drives more leads and sales, maximizing your marketing investment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Process Section -->
+    <section class="design-process-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Methodology</span>
+                <h2>Design Process</h2>
+            </div>
+            <div class="process-timeline">
+                <div class="timeline-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Discovery & Research</h3>
+                        <p>Understanding your brand, target audience, competitors, and business objectives to create a strategic foundation.</p>
+                        <div class="step-deliverables">
+                            <span>Brand Analysis</span>
+                            <span>User Research</span>
+                            <span>Competitor Study</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Wireframing & Planning</h3>
+                        <p>Creating the structural blueprint of your website with focus on user flow and content hierarchy.</p>
+                        <div class="step-deliverables">
+                            <span>Site Architecture</span>
+                            <span>Wireframes</span>
+                            <span>User Journey</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Visual Design</h3>
+                        <p>Bringing your brand to life with colors, typography, imagery, and interactive elements that engage users.</p>
+                        <div class="step-deliverables">
+                            <span>Design Mockups</span>
+                            <span>Style Guide</span>
+                            <span>Asset Creation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Development & Testing</h3>
+                        <p>Converting designs into responsive, functional websites with thorough testing across all devices.</p>
+                        <div class="step-deliverables">
+                            <span>Responsive Code</span>
+                            <span>Cross-browser Testing</span>
+                            <span>Performance Optimization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Launch & Support</h3>
+                        <p>Deploying your website and providing ongoing support to ensure optimal performance and updates.</p>
+                        <div class="step-deliverables">
+                            <span>Website Launch</span>
+                            <span>Training & Documentation</span>
+                            <span>Ongoing Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Online Presence?</h2>
+                <p>Let's create a stunning website that represents your brand and drives real business results</p>
+                <div class="cta-buttons">
+                    <button class="cta-btn primary" onclick="window.location.href='contact.html'">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Start Your Project</span>
+                    </button>
+                    <button class="cta-btn secondary" onclick="window.location.href='portfolio.html'">
+                        <i class="fas fa-images"></i>
+                        <span>View Portfolio</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>RR Web Developer</h3>
+                    <p>Creating beautiful, functional websites that drive business success through strategic design and development.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="frontend-development.html">Frontend Development</a></li>
+                        <li><a href="backend-development.html">Backend Development</a></li>
+                        <li><a href="fullstack-solutions.html">Full-Stack Solutions</a></li>
+                        <li><a href="web-design.html">Web Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="Featured Projects.html">Featured Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RR Web Developer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="web-design.js"></script>
+</body>
+</html>

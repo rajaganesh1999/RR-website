@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Development - RR Web Developer</title>
+    <link rel="stylesheet" href="frontend-development.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>RR</h2>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="featured-projects.html" class="nav-link">Featured Projects</a></li>
+                <!-- <li><a href="frontend-development.html" class="nav-link active">Frontend Development</a></li> -->
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="contact-btn" onclick="window.location.href='../contact.html#contactForm'">GET QUOTE</button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-code"></i>
+                    <span>Frontend Development</span>
+                </div>
+                <h1>Building Beautiful, <span class="highlight">Interactive</span> Web Experiences</h1>
+                <p>Transform your ideas into stunning, responsive websites that captivate users and drive business growth</p>
+                <div class="hero-buttons">
+                    <button class="cta-btn primary" onclick="document.getElementById('technologies').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-rocket"></i>
+                        <span>Explore Our Stack</span>
+                    </button>
+                    <button class="cta-btn secondary" onclick="window.location.href='../contact.html#contactForm'">
+                        <i class="fas fa-phone"></i>
+                        <span>Start Your Project</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line"><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="string">"hero"</span><span class="tag">&gt;</span></div>
+                            <div class="code-line indent"><span class="tag">&lt;h1&gt;</span>Welcome<span class="tag">&lt;/h1&gt;</span></div>
+                            <div class="code-line"><span class="tag">&lt;/div&gt;</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Frontend Development -->
+    <section class="what-is-frontend">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Understanding</span>
+                <h2>What is Frontend Development?</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-text">
+                    <p class="intro-text">Frontend development is the process of building the visual and interactive parts of a website or application — everything your users see and engage with directly.</p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="fas fa-palette"></i>
+                            <div class="feature-content">
+                                <h4>Visual Design</h4>
+                                <p>Creating beautiful layouts and engaging user interfaces</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="feature-content">
+                                <h4>Responsive Design</h4>
+                                <p>Ensuring perfect functionality across all devices</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-bolt"></i>
+                            <div class="feature-content">
+                                <h4>Performance</h4>
+                                <p>Fast-loading, optimized experiences that keep users engaged</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <div class="feature-content">
+                                <h4>User Experience</h4>
+                                <p>Intuitive navigation and seamless interactions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-visual">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="url-bar">yourwebsite.com</div>
+                        </div>
+                        <div class="browser-content">
+                            <div class="mockup-header"></div>
+                            <div class="mockup-nav">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="mockup-content">
+                                <div class="mockup-text-block"></div>
+                                <div class="mockup-text-block"></div>
+                                <div class="mockup-button"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="technologies" id="technologies">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Stack</span>
+                <h2>Technologies We Use</h2>
+                <p>We leverage modern, proven frontend technologies to build fast, functional, and user-centered websites</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Clean structure and elegant styling for modern web standards</p>
+                    <div class="tech-progress">
+                        <div class="progress-bar" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript & jQuery</h3>
+                    <p>Dynamic, interactive features that enhance user engagement</p>
+                    <div class="tech-progress">
+                        <div class="progress-bar" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React.js</h3>
+                    <p>High-performance, component-based interfaces for scalable applications</p>
+                    <div class="tech-progress">
+                        <div class="progress-bar" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                    <h3>Bootstrap & Tailwind</h3>
+                    <p>Responsive, mobile-first layouts that work on every device</p>
+                    <div class="tech-progress">
+                        <div class="progress-bar" data-width="92"></div>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-sass"></i>
+                    </div>
+                    <h3>SASS/SCSS</h3>
+                    <p>Efficient, maintainable styling with advanced CSS preprocessing</p>
+                    <div class="tech-progress">
+                        <div class="progress-bar" data-width="88"></div>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>GSAP & Animations</h3>
+                    <p>Smooth visual effects and scroll animations for engaging experiences</p>
+                    <div class="tech-progress">
+                        <div class="progress-bar" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Business Impact</span>
+                <h2>How It Helps Your Business</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Enhanced Brand Image</h3>
+                    <p>A professionally built frontend creates a powerful first impression that builds trust and credibility with your audience.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Improved User Experience</h3>
+                    <p>Intuitive design and smooth interactions keep visitors engaged longer, reducing bounce rates and increasing satisfaction.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Better SEO Rankings</h3>
+                    <p>Fast loading times, clean code, and mobile optimization contribute directly to better search engine visibility.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-convert"></i>
+                    </div>
+                    <h3>Higher Conversions</h3>
+                    <p>Strategic design elements and optimized user flows turn more visitors into customers and leads.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-devices"></i>
+                    </div>
+                    <h3>Cross-Device Compatibility</h3>
+                    <p>Your website works perfectly on desktops, tablets, and smartphones, reaching users wherever they are.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Competitive Advantage</h3>
+                    <p>Stand out from competitors with modern, fast, and user-friendly web experiences that drive business growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Process</span>
+                <h2>How We Work</h2>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Discovery & Planning</h3>
+                        <p>We understand your business goals, target audience, and technical requirements to create the perfect strategy.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Design & Prototyping</h3>
+                        <p>Creating wireframes and interactive prototypes to visualize the user experience before development begins.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Development & Testing</h3>
+                        <p>Building responsive, performant code with thorough testing across devices and browsers.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Launch & Support</h3>
+                        <p>Deploying your website and providing ongoing support to ensure optimal performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Web Presence?</h2>
+                <p>Let's create a frontend experience that drives results for your business</p>
+                <div class="cta-buttons">
+                    <button class="cta-btn primary" onclick="window.location.href='contact.html'">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Start Your Project</span>
+                    </button>
+                    <button class="cta-btn secondary" onclick="window.location.href='portfolio.html'">
+                        <i class="fas fa-eye"></i>
+                        <span>View Our Work</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>RR Web Developer</h3>
+                    <p>Creating exceptional frontend experiences that drive business growth.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="frontend-development.html">Frontend Development</a></li>
+                        <li><a href="backend-development.html">Backend Development</a></li>
+                        <li><a href="fullstack-solutions.html">fullstack-solutions</a></li>
+                        <li><a href="web-design.html">Web Design</a></li>
+                        <!-- <li><a href="#">E-commerce</a></li> -->
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="Featured Projects.html">Featured Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RR Web Developer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="frontend-development.js"></script>
+</body>
+</html>

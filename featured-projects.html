@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Projects - RR Web Developer | My Best Work</title>
+    <link rel="stylesheet" href="featured-projects.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+     Navigation 
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">RR</span>
+                <span class="logo-subtitle">Web Developer</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="featured-projects.html" class="nav-link active">Featured Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">My <span class="highlight">Featured Projects</span></h1>
+            <p class="hero-subtitle">Showcasing real-world solutions and live deployed websites</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="7">0</span>
+                    <span class="stat-label">Live Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="25">0</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-showcase">
+                <div class="window-header">
+                    <div class="window-controls">
+                        <span class="control close"></span>
+                        <span class="control minimize"></span>
+                        <span class="control maximize"></span>
+                    </div>
+                    <span class="window-title">deployed-projects.js</span>
+                </div>
+                <div class="code-content">
+                    <div class="code-line">const liveProjects = await fetchProjects();</div>
+                    <div class="code-line">liveProjects.forEach(project => {</div>
+                    <div class="code-line">&nbsp;&nbsp;deployToProduction(project);</div>
+                    <div class="code-line">});</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="education">Education</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="technology">Technology</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="education">
+                    <h3 class="project-title-card">Meru International School</h3>
+                    <div class="portfolio-image">
+                        <div class="website-preview">
+                            <div class="browser-header">
+                                <div class="browser-controls">
+                                    <span class="control-dot red"></span>
+                                    <span class="control-dot yellow"></span>
+                                    <span class="control-dot green"></span>
+                                </div>
+                                <div class="address-bar">meruinternationalschool.com</div>
+                            </div>
+                            <iframe src="https://www.meruinternationalschool.com/" title="Meru International School"></iframe>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <p>Modern educational institution website with comprehensive information system</p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>Responsive</span>
+                                </div>
+                                <div class="overlay-buttons">
+                                    <button class="btn btn-primary" onclick="openModal('meru-school')">
+                                        <i class="fas fa-eye"></i> View Details
+                                    </button>
+                                    <a href="https://www.meruinternationalschool.com/" target="_blank" class="btn btn-secondary">
+                                        <i class="fas fa-external-link-alt"></i> Live Site
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="business">
+                    <h3 class="project-title-card">Monarch Ergo</h3>
+                    <div class="portfolio-image">
+                        <div class="website-preview">
+                            <div class="browser-header">
+                                <div class="browser-controls">
+                                    <span class="control-dot red"></span>
+                                    <span class="control-dot yellow"></span>
+                                    <span class="control-dot green"></span>
+                                </div>
+                                <div class="address-bar">monarchergo.com</div>
+                            </div>
+                            <iframe src="https://www.monarchergo.com/" title="Monarch Ergo"></iframe>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <p>Professional ergonomic solutions company website with product showcase</p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>Bootstrap</span>
+                                </div>
+                                <div class="overlay-buttons">
+                                    <button class="btn btn-primary" onclick="openModal('monarch-ergo')">
+                                        <i class="fas fa-eye"></i> View Details
+                                    </button>
+                                    <a href="https://www.monarchergo.com/" target="_blank" class="btn btn-secondary">
+                                        <i class="fas fa-external-link-alt"></i> Live Site
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="technology">
+                    <h3 class="project-title-card">Pi Cloud AI</h3>
+                    <div class="portfolio-image">
+                        <div class="website-preview">
+                            <div class="browser-header">
+                                <div class="browser-controls">
+                                    <span class="control-dot red"></span>
+                                    <span class="control-dot yellow"></span>
+                                    <span class="control-dot green"></span>
+                                </div>
+                                <div class="address-bar">picloud.ai</div>
+                            </div>
+                            <iframe src="https://picloud.ai/" title="Pi Cloud AI"></iframe>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <p>Advanced cloud computing and AI services platform</p>
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>Cloud APIs</span>
+                                    <span>AI Integration</span>
+                                </div>
+                                <div class="overlay-buttons">
+                                    <button class="btn btn-primary" onclick="openModal('pi-cloud')">
+                                        <i class="fas fa-eye"></i> View Details
+                                    </button>
+                                    <a href="https://picloud.ai/" target="_blank" class="btn btn-secondary">
+                                        <i class="fas fa-external-link-alt"></i> Live Site
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="technology">
+                    <h3 class="project-title-card">Pi Data Centers</h3>
+                    <div class="portfolio-image">
+                        <div class="website-preview">
+                            <div class="browser-header">
+                                <div class="browser-controls">
+                                    <span class="control-dot red"></span>
+                                    <span class="control-dot yellow"></span>
+                                    <span class="control-dot green"></span>
+                                </div>
+                                <div class="address-bar">pidatacenters.com</div>
+                            </div>
+                            <iframe src="https://pidatacenters.com/" title="Pi Data Centers"></iframe>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <p>Enterprise data center solutions and infrastructure services</p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>PHP</span>
+                                </div>
+                                <div class="overlay-buttons">
+                                    <button class="btn btn-primary" onclick="openModal('pi-datacenters')">
+                                        <i class="fas fa-eye"></i> View Details
+                                    </button>
+                                    <a href="https://pidatacenters.com/" target="_blank" class="btn btn-secondary">
+                                        <i class="fas fa-external-link-alt"></i> Live Site
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="education">
+                    <h3 class="project-title-card">Resonance Hyderabad</h3>
+                    <div class="portfolio-image">
+                        <div class="website-preview">
+                            <div class="browser-header">
+                                <div class="browser-controls">
+                                    <span class="control-dot red"></span>
+                                    <span class="control-dot yellow"></span>
+                                    <span class="control-dot green"></span>
+                                </div>
+                                <div class="address-bar">resonancehyderabad.com</div>
+                            </div>
+                            <iframe src="https://resonancehyderabad.com/" title="Resonance Hyderabad"></iframe>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <p>Educational coaching institute with course management system</p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>MySQL</span>
+                                </div>
+                                <div class="overlay-buttons">
+                                    <button class="btn btn-primary" onclick="openModal('resonance-hyd')">
+                                        <i class="fas fa-eye"></i> View Details
+                                    </button>
+                                    <a href="https://resonancehyderabad.com/" target="_blank" class="btn btn-secondary">
+                                        <i class="fas fa-external-link-alt"></i> Live Site
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="technology">
+                    <h3 class="project-title-card">Pylonix</h3>
+                    <div class="portfolio-image">
+                        <div class="website-preview">
+                            <div class="browser-header">
+                                <div class="browser-controls">
+                                    <span class="control-dot red"></span>
+                                    <span class="control-dot yellow"></span>
+                                    <span class="control-dot green"></span>
+                                </div>
+                                <div class="address-bar">pylonix.com</div>
+                            </div>
+                            <iframe src="https://www.pylonix.com/" title="Pylonix"></iframe>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <p>Technology solutions and software development company</p>
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                    <span>Express</span>
+                                </div>
+                                <div class="overlay-buttons">
+                                    <button class="btn btn-primary" onclick="openModal('pylonix')">
+                                        <i class="fas fa-eye"></i> View Details
+                                    </button>
+                                    <a href="https://www.pylonix.com/" target="_blank" class="btn btn-secondary">
+                                        <i class="fas fa-external-link-alt"></i> Live Site
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ecommerce">
+                    <h3 class="project-title-card">Pickle Jars</h3>
+                    <div class="portfolio-image">
+                        <div class="website-preview">
+                            <div class="browser-header">
+                                <div class="browser-controls">
+                                    <span class="control-dot red"></span>
+                                    <span class="control-dot yellow"></span>
+                                    <span class="control-dot green"></span>
+                                </div>
+                                <div class="address-bar">picklejars.in</div>
+                            </div>
+                            <iframe src="https://picklejars.in/" title="Pickle Jars"></iframe>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <p>E-commerce platform for traditional Indian pickles and food products</p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>Payment Gateway</span>
+                                </div>
+                                <div class="overlay-buttons">
+                                    <button class="btn btn-primary" onclick="openModal('pickle-jars')">
+                                        <i class="fas fa-eye"></i> View Details
+                                    </button>
+                                    <a href="https://picklejars.in/" target="_blank" class="btn btn-secondary">
+                                        <i class="fas fa-external-link-alt"></i> Live Site
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-body" id="modalBody">
+                 Dynamic content will be inserted here 
+            </div>
+        </div>
+    </div>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Like What You See?</h2>
+                <p>Let's discuss your next project and bring your vision to life</p>
+                <a href="contact.html" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Start Your Project
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">RR</span>
+                        <span class="logo-subtitle">Web Developer</span>
+                    </div>
+                    <p>Professional web development services focused on creating exceptional digital experiences.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="frontend-development.html">Frontend Development</a></li>
+                        <li><a href="backend-development.html">Backend Development</a></li>
+                        <li><a href="fullstack-solutions.html">Full-Stack Solutions</a></li>
+                        <li><a href="web-design.html">Web Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="featured-projects.html">Featured Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> raja.ganesh9391@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 7382744473</p>
+                        <p><i class="fas fa-map-marker-alt"></i> AP/Vijayawada, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RR Web Developer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="featured-projects.js"></script>
+</body>
+</html>
